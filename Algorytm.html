@@ -12,14 +12,13 @@
 	{
 		var a = document.getElementById("a").value;
 		var b = document.getElementById("b").value;
-		var wynik;
-		while(a != b)
-		{
-			if(a < b) b = b - a;
-			else a = a - b;
-		}
-		wynik = a
-		document.getElementById("wynik").innerHTML = wynik;	
+		var i;
+		var wynik = "";
+		
+		for(i=a; i<=b; i++) wynik = wynik + i + " ";
+		
+		document.getElementById("wynik").innerHTML = wynik;
+		
 	}
 </script>
 <style>
