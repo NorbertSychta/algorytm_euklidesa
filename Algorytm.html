@@ -12,12 +12,17 @@
 	{
 		var a = document.getElementById("a").value;
 		var b = document.getElementById("b").value;
-		var i;
-		var s = "";
+		var wynik;
 		
-		for(i=a; i<=b; i++) s = s + i + " ";
+		while(a != b)
+		{
+			if(a < b) b = b - a;
+			else a = a - b;
+		}
 		
-		document.getElementById("wynik").innerHTML = s;	
+		wynik = a
+		
+		document.getElementById("wynik").innerHTML = wynik;	
 	}
 </script>
 <style>
